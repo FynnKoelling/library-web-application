@@ -1,0 +1,533 @@
+@charset "UTF-8";
+
+html {
+  font-family: Bookman;
+  font-size: 17px;
+  background-color: rgb(255);
+  height: 100%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+
+
+/*HEADER START----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+header{
+	background-color: rgb(0, 0, 30);
+	color: white;
+	margin: 0px;
+	padding: 0px;
+	position: center;
+}
+
+/*Logo Top Left*/
+header img{
+	padding: 10px;
+	float: left;
+}
+
+/*Logo Side Text*/
+header h3{
+	position: relative;
+	margin: 0px;
+	padding-top: 25px;
+}
+
+/*Navigation Bar Top*/
+header li{
+	display: inline;
+}
+
+/*Navigation Bar Top*/
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+/*Navigation Bar Top*/
+header nav{
+	background-color: rgb(0, 0, 30);
+	color: white;
+	padding: 1px 0;
+	margin-bottom: 0px;
+}
+
+/*Navigation Bar Top*/
+header nav ul{
+	margin: 0 15px 0 0 ;
+	list-style: none;
+	text-align: right;
+}
+
+/*Navigation Bar Top*/
+header nav a {
+	line-height: 30px;
+	font-weight: bold;
+	padding: 0 15px;
+}
+
+/*Navigation Bar Top*/
+header nav a:hover,
+header nav a#current{
+	background-color: white;
+	color: rgb(0, 0, 30);
+}
+
+.hide{
+  display: none;  
+}
+
+.nothide{
+	display: inline;
+}
+
+/*HEADER END------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*FOOTER START----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Create Sticky Footer. Source: https://css-tricks.com/couple-takes-sticky-footer/*/
+.wrapper{
+	flex: 1 0 auto;
+}
+
+/*Create Sticky Footer. Source: https://css-tricks.com/couple-takes-sticky-footer/*/
+footer {
+	flex-shrink: 0;
+	background-color: rgb(0, 0, 30);
+	color: white;
+	text-align: center;
+}
+
+/*FOOTER END------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*SECTION START---------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+section {
+	background-color: rgb(255);
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+/*section style h2*/
+section h2{
+	position: static;
+	font-size: 25px;
+	color: rgb(0, 0, 30);
+}
+
+/*section style h3*/
+section h3{
+	position: static;
+	color: rgb(0, 0, 30);
+}
+
+/*section style button*/
+section button{
+	border: outset;
+	margin-top: 15px;
+	font-family: Bookman;
+	background-color: rgb(0, 0, 30);
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+}
+
+/*section style button disabled*/
+section button:disabled{
+	opacity: 0.3;
+}
+
+/*section style button on hover and enabled*/
+section button:hover:enabled{
+	background-color: white;
+	color: rgb(0, 0, 30);
+}
+
+/*section link*/
+section a{
+	text-decoration: none;
+}
+
+/*SECTION END-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*FORM START -----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*form padding description*/
+form td:first-child {
+  padding-left:7px;
+  padding-right:5px;
+}
+
+/*form padding input field*/
+form td {
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:7px;   
+}
+
+/*form fontsize description*/
+form label{
+	font-size: 20px;
+}
+
+/*form style input*/
+form input{
+	border: inset;
+	font-size: 20px;
+	border-radius: 15px 50px 30px 5px; 
+}
+
+/*form style textarea*/
+form textarea{
+	border: inset;
+	font-size: 20px;
+	border-radius: 15px 50px 30px 5px; 
+}
+
+/*form focus on textarea on click*/
+form textarea:focus {
+	border: 2px solid blue;
+}
+
+/*Input turn red when invalid*/
+input:invalid {
+	background-color: red;
+	border: 1px solid black;
+}
+
+/*Input focus clicked Field*/
+input:focus {
+	border: 2px solid blue;
+}
+
+/*FORM END -------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---CUSTOM CLASSES---++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*Link Class*/
+.link:hover{
+	color: purple;
+}
+
+/*Navigation Icon Class*/
+.imgIcon{
+	padding-top: 50px;
+}
+
+/*Navigation Icon Class hover*/
+.imgIcon:hover{
+	opacity: .5;
+}
+
+/*Form Login Site*/
+.formLogin{
+	margin: 0 auto; 
+	width: 410px;
+	height: 145px;
+	border-radius: 15px 50px 30px 5px; 
+	background-color: rgb(0, 0, 30, 0.3);
+}
+
+/*Form AddBook Site*/
+.formAddBook{
+	margin: 0 auto; 
+	width: 430px;
+	height: 410px;
+	border-radius: 15px 50px 30px 5px; 
+	background-color: rgb(0, 0, 30, 0.3);
+}
+
+/*Input File AddBook Site*/
+.inputFile{
+	font-size: 13px;
+	background-color: white;
+}
+
+/*Big Text Class*/
+.bigText1 {
+	position: static;
+	text-align: center; 
+	line-height: 100%;
+	width: 100%;
+}
+
+/*Big Text Class h1*/
+.bigText1 h1 {
+	font-size: 50px;
+	line-height: 50px;
+	color: rgb(0, 0, 30);
+}
+
+/*Big Text Class h2*/
+.bigText1 h2 {
+	font-size: 40px;
+	line-height: 40px;
+	color: rgb(0, 0, 30);
+}
+
+
+
+/*BLUE-WHITE TABLE START -----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.tablezs{
+	border-collapse: collapse;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration: none;
+}
+
+/*table white parting line*/
+.tablezs thead tr th:first-child{
+	border-left: 1px solid rgb(0, 0, 30);
+	background-color: rgb(0, 0, 30);
+	color: white;
+}
+
+/*table white parting line*/
+.tablezs thead tr th{
+	border-left: 1px solid white;
+	background-color: rgb(0, 0, 30);
+	color: white;
+	height: 40px;
+}
+
+/*table white parting line*/
+.tablezs thead tr th:last-child{
+	border-left: 1px solid white;
+	border-right: 1px solid rgb(0, 0, 30);
+	background-color: rgb(0, 0, 30);
+	color: white;
+}
+
+/*table black parting line*/
+.tablezs tbody td{
+	border: 1px solid black;
+	height: 40px;
+}
+
+/*table link*/
+.tablezs tbody tr td a{
+	color: black;
+}
+
+/*table link hover*/
+.tablezs tbody tr td a:hover{
+	color: purple;
+}
+
+/*table color*/
+.tablezs tr:nth-child(even){ 
+	background-color: rgb(0, 0, 30, 0.3); 
+}
+
+/*table color*/
+.tablezs tr:nth-child(odd){ 
+	background-color: white;
+}
+
+/*table image*/
+.tablezs img{
+	padding: 0px;
+}
+
+/*Eye Image Class AllBooks Site*/
+.infoImg:hover{
+	opacity: .5;
+}
+
+/*BLUE-WHITE TABLE END -------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*REGISTER SITE START Source: https://www.w3schools.com/howto/howto_js_password_validation.asp -------------------------------------------------------------------------------*/
+
+/*Wrapper Class for Form and Checks Alignment*/
+.wrapperRegister{
+	width: 100%;
+	overflow: hidden;
+}
+
+/*Float Class for Form and Checks Alignment*/
+.floatLeft{
+	width: 33%;
+	height: auto;
+	float: left;
+	display: inline-block; 
+	position: relative; 
+}
+
+/*Form Register Site*/
+.formRegister{
+	margin: auto;
+	width: 410px;
+	height: 210px;
+	border-radius: 15px 50px 30px 5px; 
+	background-color: rgb(0, 0, 30, 0.3);
+	border: 1px #ccc dotted;
+}
+
+/*Stack Form and Checks vertically when Screen Size < 1300px*/
+@media screen and (max-width: 1300px) {
+  .floatLeft{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*Check Password Register valid*/
+.valid {
+  color: green;
+}
+
+/*Check Password Register tick*/
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "\2714";
+}
+
+/*Check Password Register invalid*/
+.invalid {
+  color: red;
+}
+
+/*Check Password Register cross*/
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "\2716";
+}
+
+/*REGISTER SITE END-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*RATING SITE START-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*RATING SYSTEM START Source:https://codepen.io/GeoffreyCrofte/pen/jEkBL -----------------*/
+.rating {
+	width: auto;
+	margin: 0 auto 10px;
+	font-size: 60px;
+	overflow: hidden;
+	direction: rtl;
+}
+		
+.rating input {
+	float: right;
+	opacity: 0;
+	position: absolute;
+}
+
+.rating a,
+.rating label {
+	letter-spacing: 3px;
+	float: none;
+	color: #aaa;
+	text-decoration: none;
+	-webkit-transition: color .4s;
+	-moz-transition: color .4s;
+	-o-transition: color .4s;
+	transition: color .4s;
+}
+	
+/*Color Stars Orange on Hover and Focus*/
+.rating label:hover ~ label,
+.rating input:focus ~ label,
+.rating label:hover,
+.rating a:hover,
+.rating a:hover ~ a,
+.rating a:focus,
+.rating a:focus ~ a		{
+	color: #fc0;
+	cursor: pointer;
+	outline: none;
+}
+/*RATING SYSTEM END---------------------------------------------------------------------*/
+
+
+/*RATING TABLE START Source:https://www.w3schools.com/howto/howto_css_user_rating.asp --*/
+/* Three column layout */
+.side {
+  float: left;
+  width: 30%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 40%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 20%; height: 18px; background-color: #fc0;}
+.bar-4 {width: 30%; height: 18px; background-color: #fc0;}
+.bar-3 {width: 10%; height: 18px; background-color: #fc0;}
+.bar-2 {width: 4%; height: 18px; background-color: #fc0;}
+.bar-1 {width: 15%; height: 18px; background-color: #fc0;}
+/*RATING TABLE END---------------------------------------------------------------------*/
+
+
+/*DISPLAY STARS START Source: https://css-tricks.com/five-methods-for-five-star-ratings/ */
+:root {
+  --star-size: 60px;
+  --star-color: #aaa;
+  --star-background: #fc0;
+}
+
+.Stars {
+  --percent: 0%; 
+  display: block;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.Stars:before {
+    content: '★★★★★';
+    letter-spacing: 0px;
+	text-align: center;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+/*DISPLAY STARS END---------------------------------------------------------------------*/
+
+
+/*RATING SITE END-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
