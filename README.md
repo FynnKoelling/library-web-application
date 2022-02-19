@@ -4,7 +4,8 @@ by Fynn Linus Kölling and Kai Fehrcke
 Implementation of a web application for a library website. The application contains several pages with functions such as registration and log-in options, the creation, search and rating of books, and wish lists. All functions are listed in the table below. AJAX applications were written to implement user-related actions. A MySQL database runs in the background.
 
 # Important:
-Please note that all text on the pages is written in German. However, the code is commented in English.
+Please note that all text on the pages is written in German. However, the code is commented in English. The repository contains a sitemap PDF that gives an overview of the web pages and functions.
+
 To run the application, XAMPP (https://www.apachefriends.org/de/index.html) must be installed and the Apache and MySQL modules must be started. The repository must be stored under C:\xampp\htdocs. The databases in the backend can be accessed in any web browser via http://localhost/phpmyadmin. Before starting the application, a new database with the name **mybib** must be created there! The application can then be accessed in a web browser via http://localhost/repository-name/start.php. It is necessary to call **start.php** first when starting the application for the first time in order to create the necessary tables!
 
 The application comes with admin access. The access details are: Email: **admin@bib.de** Password: **12345**. The admin has special rights such as creating new books or organising user accounts.
@@ -39,9 +40,6 @@ The application comes with admin access. The access details are: Email: **admin@
 | Show user accounts     | allusers.php |                       |                      |
 | Show wish lists        | allusers.php |                       |                      |
 | Show wish list of user | wishlist.php |                       |                      |
-
-## Sitemap
-![Sitemap](https://github.com/FynnKoelling/library-web-application/blob/main/sitemap.png?raw=true)
 
 ## Sources:
 - HTML table from PHP array: https://stackoverflow.com/questions/4746079/how-to-create-a-html-table-from-a-php-array, Jordan Arseno 06.04.2015 , last access 18.08.2020
