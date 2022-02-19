@@ -1,7 +1,7 @@
 # library-web-application
 by Fynn Linus Kölling and Kai Fehrcke
 
-Implementation of a web application for a library website. The application contains several pages with functions such as registration and log-in options, the creation, search and rating of books, and wish lists. All functions are listed in the table below. AJAX applications were written to implement user-related actions. A MySQL database runs in the background.
+Implementation of a web application for a library website. The application contains several pages with functions such as registration and log in options, the creation, search and rating of books, and wish lists. All functions are listed in the table below. AJAX applications were written to implement user-related actions, for example when searching for a book. A MySQL database runs in the background. It contains four tables for the users, the books, the ratings and the wish lists.
 
 # Important:
 Please note that all text on the pages is written in German. However, the code is commented in English. The repository contains a sitemap PDF that gives an overview of the web pages and functions.
@@ -26,8 +26,8 @@ The application comes with admin access. The access details are: Email: **admin@
 | Search book            | allbooks.php | allbooks_fkt.php      |                      |
 | Show book information  | info.php     | info_fkt.php          |                      |
 | User functions:        |              |                       |                      |
-| Log-in                 | login.php    | login_fkt.php         |                      |
-| Log-out                |              | logout_fkt.php        |                      |
+| Login                  | login.php    | login_fkt.php         |                      |
+| Logout                 |              | logout_fkt.php        |                      |
 | Delete user account    |              | deleteAccount_fkt.php |                      |
 | Add book to wish list  | info.php     | addwish_fkt.php       |                      |
 | Rate book              | rate.php     | rate_fkt.php          | rate.js              |
